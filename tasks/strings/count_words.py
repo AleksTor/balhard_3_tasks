@@ -22,7 +22,8 @@ def count_words(str_to_count: str) -> int:
 
     :return: количество слов в строке
     """
-    result = None
+    str_to_count = str_to_count.split()
+    result = len(str_to_count)
     return result
 
 
