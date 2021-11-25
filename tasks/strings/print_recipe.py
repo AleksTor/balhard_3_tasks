@@ -33,7 +33,9 @@ def print_recipe() -> str:
     :return: отформатированная строка
     :rtype: str
     """
-    result = None
+    # result = "Рецепт" + " " + TITLE + "\n" + RECIPE[0] + "\n" + RECIPE[1] + "\n" + RECIPE[2] + "\n"\
+    # + RECIPE[3] + "\n" + RECIPE[4] '''выдает ошибку при pytest'''
+    result = "Рецепт {}:\n{}".format(TITLE, ',\n'.join(RECIPE))
     return result
 
 
